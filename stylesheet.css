@@ -1,74 +1,135 @@
 body{
     background-color:rgb(243, 237, 237);
-    font-size:18px !important;
+    font-size:18px;
+    line-height: 30px;
+    
    
     
 }
-.sidebar{
+ .container{
+    width:98%;
+    border:solid 2px hotpink;
+    margin:1%;
+} 
+div.sidebar{
+
     width:200px;
     height: 100%;
-    position:fixed;
-    top: 0;
-    right: 0px;
+   position: fixed;
+    top: 2%;
+    right:2%;
     background-color:#273648 ;
-    z-index: 1;
-}
-.main{
-    margin-right:200px;
-    width: 824px;
-    height:100%;
+    overflow: hidden;
     
+    }
+
+
+.main{
+   
+  margin-right: 200px;
 }
-.dropdown{
-    margin-left: 0px;
-    width:100%;
+
+.dropdown
+
+{
+    
     height:64px;
     background-color:#ffffff;
 }
 
 
 .dropbtn{
-    background-color:#DDDDDD;
+   
+    margin:8px;
     border-radius:4px;
+    border:solid 1px #DDDDDD;
     width:160px;
     height:48px;
     
 }
 input{
     padding:9px 16px 9px 27.6px;
+    margin-left: 8px;
     height:48px;
     width:256px;
+    border:solid 1px #DDDDDD;
     
 }
 
 .task{
-    width:792px;
-    height: 100%;
+
     text-align: right;
-    background-color: aqua;
+    background-color:blue; 
+    margin-top:32px; 
+    margin-right:16px; 
 }
 
  ul{
-    list-style-image: url('');
+   
+    
+    height: auto;
+    list-style-image: url('./assets/icon-uncheck.svg');
     list-style-position: inside;
-    
-    margin: 0;
-  padding: 0; 
-}
-li{
-    position: relative;
-    height: 64px;
-    width:100%;
-    direction: rtl;
-    padding:5px;
-    background-color:#ffffff;
-    
+    list-style-type: disc;
+   
+   
 
+}
+li{   
+    
+    height: 64px;
+    direction: rtl;
+    background-color:#ffffff;
 } 
 
 li.checked {
+    list-style-image: url('./assets/icon-check.svg');
     background: #888;
     color: #fff;
     text-decoration: line-through;
 
+  }
+
+  nav a{
+     color:#EDF4FC;
+  }
+
+  nav li{
+      
+      display:inline-block;
+      width: 200px;
+      height: 48px;
+      direction: rtl;
+      padding:16px 30px 0 16px;
+      background-color:red;
+      border :solid 1px black;
+      padding-right: 30px;
+     
+  }
+
+  .logo{
+      display:flex;
+      align-content: space-between;
+     align-items: flex-start;
+  }
+  #closebtn{
+      background-color:transparent;
+      border:hidden;
+      height: 11px;
+      width: 9.4px;
+      margin:5px 5px;
+      background-image: url('./assets/outline_clear_white_18dp.png');
+      background-repeat: no-repeat;
+      background-size:cover;
+  }
+
+  #logo{
+    display: inline-block;  
+      height: 32px;
+      width: 83px; 
+      margin:16px 0px 16px 80px;
+      background-repeat: no-repeat; 
+      background-image: url(" ./assets/logo.png");
+      background-size: contain;
+      
   }
