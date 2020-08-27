@@ -1,20 +1,30 @@
 body{
     background-color:rgb(243, 237, 237);
-    font-size:18px;
-    line-height: 30px;
+    
+    
+    
     
    
     
 }
+button,li{
+    font-family: 'Dubai-Light';
+    line-height: 30px;
+    text-align: justify;
+    font-size: 18px;
+}
  .container{
+    font-size:18px !important;
+    line-height: 30px;
+    color:#666666;
+    font-family: 'Dubai-Light' !important;
     width:98%;
-    border:solid 2px hotpink;
     margin:1%;
 } 
 div.sidebar{
 
     width:200px;
-    height: 100%;
+    height: 100vh;
    position: fixed;
     top: 2%;
     right:2%;
@@ -45,6 +55,7 @@ div.sidebar{
     border:solid 1px #DDDDDD;
     width:160px;
     height:48px;
+    color:#535353
     
 }
 input{
@@ -59,27 +70,34 @@ input{
 .task{
 
     text-align: right;
-    background-color:blue; 
+   
     margin-top:32px; 
     margin-right:16px; 
+}
+.listbtn{
+    border:hidden;
+    float: left;
+    margin-left: 33px;
+    padding:8px;
+    border-radius: 100px;
+    color:#535353;
+    background-color: #E0E0E0;
 }
 
  ul{
    
-    
     height: auto;
     list-style-image: url('./assets/icon-uncheck.svg');
-    list-style-position: inside;
-    list-style-type: disc;
-   
-   
-
+    list-style-position:inside;
+    justify-content:baseline ;
+    
 }
 li{   
-    
-    height: 64px;
+    padding:16px 16px 24px ;
+    height: 30px;
     direction: rtl;
     background-color:#ffffff;
+    overflow: hidden;
 } 
 
 li.checked {
@@ -90,20 +108,23 @@ li.checked {
 
   }
 
+  
   nav a{
-     color:#EDF4FC;
+    color:#EDF4FC!important;
+     text-decoration: none;
   }
 
   nav li{
-      
+      color:#EDF4FC;
       display:inline-block;
       width: 200px;
       height: 48px;
       direction: rtl;
       padding:16px 30px 0 16px;
-      background-color:red;
-      border :solid 1px black;
+      background-color: transparent;
       padding-right: 30px;
+      text-align: center;
+     
      
   }
 
@@ -132,4 +153,22 @@ li.checked {
       background-image: url(" ./assets/logo.png");
       background-size: contain;
       
+  }
+
+  #user{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      height: 80px;
+      position: absolute;
+      bottom:0;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+  }
+  #avatar{
+    display:block;
+    border-radius:  48px ;
+    height: 48; 
+    width: 48;
   }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="./stylesheet.css"  type="text/css">
+    <script src="//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css"></script>
     </head>
     <body>
 <div class="container">
@@ -21,11 +22,11 @@
             <p> :التصميم</p>
             
         <ul>
-            <li draggable="true">تصميم الشكل العام وتجهيز المهام وتسليمه</li>
-            <li draggable="true">  تحويل التصميم إلى HTML+ CSS</li>
-            <li draggable="true">جعل التصميم متجاوب مع المتصفحات الصغيرة (Responsive)</li>
-            <li draggable="true">جعل التصميم متوافق كحد أدنى مع IE9 </li>
-            <li draggable="true">استخدام SASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</li>
+            <li draggable="true"><button class="listbtn">CSS</button>تصميم الشكل العام وتجهيز المهام وتسليمه</li>
+            <li draggable="true"> <button class="listbtn">CSS</button> تحويل التصميم إلى HTML+ CSS</li>
+            <li draggable="true"><button class="listbtn">CSS</button>جعل التصميم متجاوب مع المتصفحات الصغيرة (Resbuttononsive)</li>
+            <li draggable="true"><button class="listbtn">Browsers</button>جعل التصميم متوافق كحد أدنى مع IE9 </li>
+            <li draggable="true"><button class="listbtn">SASS</button>استخدامSASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</li>
         </ul>
         
         </div>
@@ -38,7 +39,7 @@
             <ul>
             <li draggable="true">إمكانية إخفاء القائمة الجانبية</li>
             <li draggable="true">إمكانية تعليم المهام كمنتهية</li>
-            <li draggable="true">إمكانية إعادة ترتيب المهام والمجموعات</li>
+            <li draggable="true">إمكانيةإعادة ترتيب المهام والمجموعات</li>
             <li draggable="true">التوافقية مع أجهزة اللمس</li>
             </ul>
         
@@ -50,7 +51,7 @@
             <p>:أخرى</p>
             <ul>
             <li draggable="true"> تسليم المشروع النهائي في git repository مع ملاحظة استخدام git-flow </li>
-            <li draggable="true">.إضافة لمساتك الخاصة في الأماكن التي تراها مناسبة مع ذكر سبب إضافتها</li>
+            <li draggable="true">إضافة لمساتك الخاصة في الأماكن التي تراها مناسبة مع ذكر سبب إضافتها.</li>
             </ul>
             </div>
              
@@ -59,12 +60,23 @@
 
              <div class="sidebar">
                  <div class="logo">
-                  <button onclick="close()" id="closebtn"> </button><div id="logo"></div></div>
+                  <button onclick="close()" id="closebtn"> </button>
+                  <div id="logo"></div>
+                </div>
                  <nav>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                    <li><img src="assets/icon-list.svg"><a href="#"> المهام</a> <img src="assets/icon-arrow-left.svg"></li>
+                    <li> <img src="assets/icon-user.svg"><a href="#"> الأعضاء</a> <img src="assets/icon-arrow-left.svg"></li>
+                    <li><img src="assets/icon-creditcard.svg"><a href="#"> الدفع والفواتير</a><img src="assets/icon-arrow-left.svg"></li>
+                    <li> <img src="assets/icon-settings.svg"><a href="#"> إعدادات</a><img src="assets/icon-arrow-left.svg"></li>
+                    
                  </nav>
+                  <div id="user">
+                       
+                           <img src="assets/icon-arrow-down-small.png" alt="" style="display:block">
+                      <p>hdhhdhhd</p>
+                          <img src="assets/avatar.png"  alt="usericone" id="avatar">
+
+                 </div> 
                 
              </div>
     </div>
