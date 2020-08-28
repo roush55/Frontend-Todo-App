@@ -1,5 +1,6 @@
+
 body{
-    background-color:rgb(243, 237, 237);
+    background-color:#f9f9f9;
     
     
     
@@ -7,21 +8,17 @@ body{
    
     
 }
-button,li{
-    font-family: 'Dubai-Light';
-    line-height: 30px;
-    text-align: justify;
+button,li, .container{
+    font-family: 'Dubai-Regular';
     font-size: 18px;
-}
- .container{
-    font-size:18px !important;
     line-height: 30px;
     color:#666666;
-    font-family: 'Dubai-Light' !important;
+}
+ #container{
     width:98%;
     margin:1%;
 } 
-div.sidebar{
+#sidebar{
 
     width:200px;
     height: 100vh;
@@ -34,7 +31,7 @@ div.sidebar{
     }
 
 
-.main{
+#main{
    
   margin-right: 200px;
 }
@@ -70,9 +67,10 @@ input{
 .task{
 
     text-align: right;
-   
     margin-top:32px; 
-    margin-right:16px; 
+    margin-right:16px;
+    padding-bottom: 0;
+   
 }
 .listbtn{
     border:hidden;
@@ -87,46 +85,69 @@ input{
  ul{
    
     height: auto;
-    list-style-image: url('./assets/icon-uncheck.svg');
-    list-style-position:inside;
-    justify-content:baseline ;
-    
+    list-style:circle inside url('./assets/icon-uncheck.svg');
+    margin-top:0;
+   vertical-align: middle;
+
 }
-li{   
-    padding:16px 16px 24px ;
+
+.done{
+     color: #666666 50% ;
+    list-style-image: url('./assets/icon-check.svg');
+     text-decoration:line-through;
+}
+li{  
+    padding:16px  13px 25px 18px ;
     height: 30px;
     direction: rtl;
     background-color:#ffffff;
     overflow: hidden;
+  
+    
 } 
 
-li.checked {
-    list-style-image: url('./assets/icon-check.svg');
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
 
+  nav{
+     
+      vertical-align: middle;
+     
+      
   }
 
   
   nav a{
-    color:#EDF4FC!important;
+      display: inline-block;
+    color:#EDF4FC;
      text-decoration: none;
+     width: 132px;
+     text-align: right;
+     margin-right: 5px;
+     font-family: 'Dubai-Medium';
+     
+     
   }
 
   nav li{
-      color:#EDF4FC;
-      display:inline-block;
-      width: 200px;
-      height: 48px;
+   
+    background-color:transparent;
+    display: flex;
+    justify-content:flex-start;
+    align-items: baseline;
+      height: 30px;
+      width: 180px;
       direction: rtl;
-      padding:16px 30px 0 16px;
-      background-color: transparent;
+      padding:9px 10px;
+      margin:0;
       padding-right: 30px;
-      text-align: center;
-     
-     
+      text-align: center; 
   }
+  
+  nav img{
+      height: 18px;
+      width: 18px;
+  }
+  
+  
 
   .logo{
       display:flex;
@@ -141,6 +162,7 @@ li.checked {
       margin:5px 5px;
       background-image: url('./assets/outline_clear_white_18dp.png');
       background-repeat: no-repeat;
+      font-size:13px;
       background-size:cover;
   }
 
@@ -156,19 +178,27 @@ li.checked {
   }
 
   #user{
+      width: 180px;
+      background-color: transparent;
       display: flex;
       justify-content:space-around;
       align-items: center;
       height: 80px;
       position: absolute;
       bottom:0;
-      background-repeat: no-repeat;
-      background-size: cover;
+      border:solid 1px pink;
+  }
 
+  .task p{
+      color:#30394A ;
+      margin-bottom: 8px;
+      font-size:20px;
+      font-family: 'Dubai-Medium';
+     
   }
   #avatar{
-    display:block;
-    border-radius:  48px ;
+    border-radius:48px ;
     height: 48; 
     width: 48;
   }
+  

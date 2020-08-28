@@ -3,40 +3,43 @@
     <head>
     <meta charset="utf-8">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet.css"  type="text/css">
-    <script src="//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css"></script>
+    <link src="//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css" type="text/css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     </head>
     <body>
-<div class="container">
+<div id="container">
         
-    <div class="main">
+    
         <!-- dropdown task menu -->
             <div class="dropdown">
               <input type="search" id="search" name="بحث">
-              <button onclick="myFunction()" class="dropbtn"><img src='./assets/icon-arrow-down-small-dark.svg' alt="icone"/> جميع المهام</button>
+              <button class="dropbtn"><img src='./assets/icon-arrow-down-small-dark.svg' alt="icone"/> جميع المهام</button>
             </div>
 
+            <div id="main">
         <!--  design list-->
-        <div class="task">
+        <div class="task" draggable="true">
            
-            <p> :التصميم</p>
+           <p>:التصميم</p>
             
-        <ul>
-            <li draggable="true"><button class="listbtn">CSS</button>تصميم الشكل العام وتجهيز المهام وتسليمه</li>
-            <li draggable="true"> <button class="listbtn">CSS</button> تحويل التصميم إلى HTML+ CSS</li>
-            <li draggable="true"><button class="listbtn">CSS</button>جعل التصميم متجاوب مع المتصفحات الصغيرة (Resbuttononsive)</li>
-            <li draggable="true"><button class="listbtn">Browsers</button>جعل التصميم متوافق كحد أدنى مع IE9 </li>
-            <li draggable="true"><button class="listbtn">SASS</button>استخدامSASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</li>
+        <ul class="drag">
+            <li draggable="true"><div class="listbtn">CSS</div>تصميم الشكل العام وتجهيز المهام وتسليمه</li>
+            <li draggable="true"> <div class="listbtn">CSS</div> تحويل التصميم إلى HTML+ CSS</li>
+            <li draggable="true"><div class="listbtn">CSS</div>جعل التصميم متجاوب مع المتصفحات الصغيرة (Resbuttononsive)</li>
+            <li draggable="true"><div class="listbtn">Browsers</div>جعل التصميم متوافق كحد أدنى معIE9 </li>
+            <li draggable="true"><div class="listbtn">SASS</div>استخدامSASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</li>
         </ul>
         
         </div>
 
         <!-- enhancer list-->
-        <div class="task">
+        <div class="task" draggable="true">
           
-            <p>:تحسينات</p>
-            
-            <ul>
+           <p>:تحسينات</p>
+            <ul class="drag">
             <li draggable="true">إمكانية إخفاء القائمة الجانبية</li>
             <li draggable="true">إمكانية تعليم المهام كمنتهية</li>
             <li draggable="true">إمكانيةإعادة ترتيب المهام والمجموعات</li>
@@ -46,39 +49,42 @@
           </div>
     
         <!-- other list-->
-           <div class="task">
+           <div class="task" draggable="true">
             
-            <p>:أخرى</p>
-            <ul>
-            <li draggable="true"> تسليم المشروع النهائي في git repository مع ملاحظة استخدام git-flow </li>
+           <p>:أخرى</p>
+            <ul class="drag">
+            <li draggable="true"> تسليم المشروع النهائي في git repository مع ملاحظة استخدامgit-flow </li>
             <li draggable="true">إضافة لمساتك الخاصة في الأماكن التي تراها مناسبة مع ذكر سبب إضافتها.</li>
             </ul>
             </div>
              
-             <!--end of main div-->
+            
         </div>
-
-             <div class="sidebar">
+               <!--end of main div-->
+             <div id="sidebar">
                  <div class="logo">
                   <button onclick="close()" id="closebtn"> </button>
                   <div id="logo"></div>
                 </div>
                  <nav>
-                    <li><img src="assets/icon-list.svg"><a href="#"> المهام</a> <img src="assets/icon-arrow-left.svg"></li>
-                    <li> <img src="assets/icon-user.svg"><a href="#"> الأعضاء</a> <img src="assets/icon-arrow-left.svg"></li>
-                    <li><img src="assets/icon-creditcard.svg"><a href="#"> الدفع والفواتير</a><img src="assets/icon-arrow-left.svg"></li>
-                    <li> <img src="assets/icon-settings.svg"><a href="#"> إعدادات</a><img src="assets/icon-arrow-left.svg"></li>
+                    <li><img src="assets/round_reorder_white_36dp.png" alt="icon" ><a href="#"> المهام</a><img src="assets/round_keyboard_backspace_white_36dp.png" alt="icon" class="icon"> </li>
+                    <li> <img src="assets/round_account_box_white_36dp.png"alt="icon"><a href="#"> الأعضاء</a> <img src="assets/round_keyboard_backspace_white_36dp.png" alt="icon"></li>
+                    <li><img src="assets/round_payment_white_36dp.png"alt="icon"><a href="#"> الدفع والفواتير</a><img src="assets/round_keyboard_backspace_white_36dp.png" alt="icon"></li>
+                    <li> <img src="assets/round_settings_white_36dp.png"alt="icon"><a href="#"> إعدادات</a><img src="assets/round_keyboard_backspace_white_36dp.png" alt="icon"></li>
                     
                  </nav>
-                  <div id="user">
-                       
-                           <img src="assets/icon-arrow-down-small.png" alt="" style="display:block">
+                  <div >
+    
+                          <li id="user"> 
+                       <img src="assets/avatar.png" alt="usericon">
                       <p>hdhhdhhd</p>
-                          <img src="assets/avatar.png"  alt="usericone" id="avatar">
+                          <img src="assets/icon-arrow-down-small.png" id="avatar"></li>
 
                  </div> 
                 
              </div>
     </div>
+    
+  <script src="./main.js"></script>
     </body>
     </html>
