@@ -27,3 +27,16 @@ $('#closebtn').on('click','#siderbar',function(){
 
 $('.drag').sortable({axis:"y"});
 
+$('#slideMenu').on('click',function(){
+    $('#sidebar').show()
+
+})
+
+$('#search').on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#drag li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });})
+
+
+

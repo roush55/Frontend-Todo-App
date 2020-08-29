@@ -9,16 +9,20 @@
     <link src="//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css" type="text/css"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    </head>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>  
+  </head>
     <body>
 <div id="container">
         
   <div id="main">
         <!-- dropdown task menu -->
             <header class="dropdown">
-              <input type="search" id="search" placeholder="بحث">
-              <button class="dropbtn"><img src='./assets/icon-arrow-down-small-dark.svg' alt="icone"/> جميع المهام</button>
-            </header>
+    <ul id ="header">
+     <li> <input type="search" id="search" placeholder="بحث"></li>
+    <li> <button class="dropbtn"><i class="fas fa-angle-down "style="float:left"></i> جميع المهام</button></li>
+   <li style="float:right"><a href="#" id="slideMenu"><i class="fas fa-bars"></i></a></li>
+    </ul>
+    </header>
 
            
         <!--  design list-->
