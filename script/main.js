@@ -3,19 +3,17 @@ $(document).ready(function(){
     console.log('ready');
     
 });
+
+//hide the sidebar on click 
 $('#closebtn').click(function(){
        $('#sidebar').hide()})
 
-
+//change style for check list 
 $(".task ul").on('click','li',function(){
     $(this).toggleClass('done')
 })
 
 
-
-$(document).ready(function(){
- console.log('ready')   
-});
 
 // hide the  side navbar 
 $('#closebtn').on('click','#siderbar',function(){
@@ -27,9 +25,10 @@ $('#closebtn').on('click','#siderbar',function(){
 
 $('.drag').sortable({axis:"y"});
 
+//control button to show menu 
+
 $('#slideMenu').on('click',function(){
     $('#sidebar').show()
-
 })
 
 $('#search').on("keyup", function() {

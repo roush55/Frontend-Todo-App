@@ -262,6 +262,8 @@ nav{
     width: 48;
   }
   
+
+  /* Media Queries*/
   @media only screen and (max-width:700px) {
     /* For mobile phones: */
     
