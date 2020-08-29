@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet.css"  type="text/css">
+  
+    <link rel="stylesheet" href="./css/stylesheet.css"  type="text/css">
     <link src="//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css" type="text/css"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -12,21 +13,21 @@
     <body>
 <div id="container">
         
-    
+  <div id="main">
         <!-- dropdown task menu -->
-            <div class="dropdown">
-              <input type="search" id="search" name="بحث">
+            <header class="dropdown">
+              <input type="search" id="search" placeholder="بحث">
               <button class="dropbtn"><img src='./assets/icon-arrow-down-small-dark.svg' alt="icone"/> جميع المهام</button>
-            </div>
+            </header>
 
-            <div id="main">
+           
         <!--  design list-->
         <div class="task" draggable="true">
            
            <p>:التصميم</p>
             
         <ul class="drag">
-            <li draggable="true"><div class="listbtn">CSS</div>تصميم الشكل العام وتجهيز المهام وتسليمه</li>
+            <li draggable="true">تصميم الشكل العام وتجهيز المهام وتسليمه</li>
             <li draggable="true"> <div class="listbtn">CSS</div> تحويل التصميم إلى HTML+ CSS</li>
             <li draggable="true"><div class="listbtn">CSS</div>جعل التصميم متجاوب مع المتصفحات الصغيرة (Resbuttononsive)</li>
             <li draggable="true"><div class="listbtn">Browsers</div>جعل التصميم متوافق كحد أدنى معIE9 </li>
@@ -74,17 +75,16 @@
                     
                  </nav>
                   <div >
-    
                           <li id="user"> 
                        <img src="assets/avatar.png" alt="usericon">
-                      <p>hdhhdhhd</p>
-                          <img src="assets/icon-arrow-down-small.png" id="avatar"></li>
+                      <div class="user"><p> محمد عبدالله </p><p><span style="font-size:11px; opacity: .5; height: 18;"> الشركة المحدودة</span></p></div>
+                        <img src="assets/icon-arrow-down-small.png" id="avatar"></li>
 
                  </div> 
                 
              </div>
     </div>
     
-  <script src="./main.js"></script>
+  <script src="./script/main.js"></script>
     </body>
     </html>
